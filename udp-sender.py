@@ -1,7 +1,7 @@
 import socket
 
 UDP_IP = "34.64.120.123"
-UDP_PORT = 5000
+UDP_PORT = 5001
 server_addr = (UDP_IP, UDP_PORT)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
