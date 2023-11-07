@@ -11,12 +11,11 @@ s.listen(1)
 
 while True:
     conn, addr = s.accept()
+    print('Client address: ', addr)
     data = conn.recv(1024)
     if not data:
         break
-    currentTime = " " + time.ctime(time.time()) + "\r\n"
+    currentTime = " updated!!! " + time.ctime(time.time()) + "\r\n"
     data = data + currentTime.encode('ascii')
     conn.send(data)
     conn.close()
-    print("received message:", data.decode('utf-8'), "from ", addr)
-conn.close()
