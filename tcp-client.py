@@ -1,6 +1,6 @@
 import socket
 
-IP = "34.64.120.123"
+IP = "34.64.155.191"
 TCP_PORT = 5001
 server_addr = (IP, TCP_PORT)
 
